@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+// TODO: Include packages needed for this application - Added packages. 
 const inquirer = require("inquirer"); 
 const fs = require("fs");  
 const generate = require("./utils/generateMarkdown"); 
 
-// TODO: Create an array of questions for user input
+// TODO: Create an array of questions for user input - Added questions. 
 const questions = [
     {
         type: "input",
@@ -27,9 +27,9 @@ const questions = [
     }, 
     {
         type: "list",
-        name: "licence",
+        name: "license",
         message: "Please select your project licence/badge.",   
-        choices: ["Permissive", "Copyleft", "Dual", "Public Domain", "Open Source", "Unlicensed/None"]
+        choices: ["ISC", "MIT", "Apache 2.0", "GPL 3.0", "BSD 3", "None"]
     }, 
     {
         type: "input",
@@ -58,19 +58,18 @@ const questions = [
    },
 ];
 
-
-// TODO: Create a function to write README file
+// TODO: Create a function to write README file - wrote function. 
 inquirer.prompt(questions).then((answers) => {            
-fs.writeFile("README.md", generate (answers), function(err) { 
-            if (err) {
-            throw err
-            }; 
-            console.log("New README file created successfully.");
+    fs.writeFile("README.md", generate (answers), function(err) { 
+                if (err) {
+                throw err
+                }; 
+                console.log("New README file created successfully.");
+                }); 
             }); 
-        }); 
 
-// TODO: Create a function to initialize app
+// TODO: Create a function to initialize app - Completed. 
 function init() {
 }
-// Function call to initialize app
+// Function call to initialize app - confirmed. 
 init(); 
