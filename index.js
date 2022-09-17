@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer"); 
-const fs = require("fs"); 
-const axios = require("axios"); 
+const fs = require("fs");  
 const generate = require("./utils/generateMarkdown"); 
 
 // TODO: Create an array of questions for user input
@@ -30,7 +29,7 @@ const questions = [
         type: "list",
         name: "licence",
         message: "Please select your project licence/badge.",   
-        choices: ["Permissive", "Copyleft", "Dual", "Public Domain", "Open Source", "Unlicensed"]
+        choices: ["Permissive", "Copyleft", "Dual", "Public Domain", "Open Source", "Unlicensed/None"]
     }, 
     {
         type: "input",
@@ -54,34 +53,21 @@ const questions = [
    }, 
    {
         type: "input",
-        name: "repo",
-        message: "What is your repo link?"
+        name: "email",
+        message: "what is your email address?"
    },
 ];
 
-inquirer
-.prompt(questions)
-    .then(function(data){
-        const queryUrl = `https://api.github.com/users/${data.username}`;
-
-        axios.get(queryUrl).then(function(res) {
-            
-            const githubData = {
-                githubImage: res.data.avatar_url,
-                email: res.data.email,
-                profile: res.data.html_url,
-                name: res.data.name
-            }; 
 
 // TODO: Create a function to write README file
-            fs.writeFile("README.md", generate(data,githubData), function(err) { 
+inquirer.prompt(questions).then((answers) => {            
+fs.writeFile("README.md", generate (answers), function(err) { 
             if (err) {
             throw err
             }; 
             console.log("New README file created successfully.");
             }); 
         }); 
-    }); 
 
 // TODO: Create a function to initialize app
 function init() {
