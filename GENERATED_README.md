@@ -1,5 +1,5 @@
 # Read Me Generator
-[![Apache](https://img.shields.io/static/v1?label=license&message=Apache&color=green)](https://opensource.org/licenses/Apache-2.0)
+[![ISC](https://img.shields.io/static/v1?label=license&message=ISC&color=green)]((https://opensource.org/licenses/ISC))
   
 ## Table of Contents: 
 * [Description](#Description)
@@ -18,10 +18,10 @@ The objective of this project to enable a user to quickly create an organized an
 npm i
 
 ## Usage
-To quickly make a README file for any project. 
+To quickly generate a README file for any project. 
 
 ## License
-I have my Apache.
+I have my ISC.
 
 ## Contributing
 Currently there is no additional contributors, however, feel free to submit a pull request to add contributions. 
