@@ -29,7 +29,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "Please select your project licence/badge.",   
-        choices: ["ISC", "MIT", "Apache 2.0", "GPL 3.0", "BSD 3", "None"]
+        choices: ["ISC", "MIT", "Apache", "IBM", "BSD", "None"]
     }, 
     {
         type: "input",
@@ -60,13 +60,13 @@ const questions = [
 
 // TODO: Create a function to write README file - wrote function. 
 inquirer.prompt(questions).then((answers) => {            
-    fs.writeFile("README.md", generate (answers), function(err) { 
+fs.writeFile("README.md", generate (answers), function(err) { 
                 if (err) {
                 throw err
                 }; 
                 console.log("New README file created successfully.");
                 }); 
-            }); 
+            });
 
 // TODO: Create a function to initialize app - Completed. 
 function init() {
