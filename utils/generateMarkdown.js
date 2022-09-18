@@ -66,7 +66,7 @@ I have my ${data.license}.
 ${data.contributing}
 
 ## Tests
-${data.tests}
+${data.test}
 
 ## Questions
 ${data.questions}

@@ -1,5 +1,5 @@
 # Read Me Generator
-[![ISC](https://img.shields.io/static/v1?label=license&message=ISC&color=green)]((https://opensource.org/licenses/ISC))
+[![Apache](https://img.shields.io/static/v1?label=license&message=Apache&color=green)](https://opensource.org/licenses/Apache-2.0)
   
 ## Table of Contents: 
 * [Description](#Description)
@@ -21,16 +21,16 @@ npm i
 To quickly make a README file for any project. 
 
 ## License
-I have my ISC.
+I have my Apache.
 
 ## Contributing
-No additional contributors; however, fell free to submit a pull request to add contributions. 
+Currently there is no additional contributors, however, feel free to submit a pull request to add contributions. 
 
 ## Tests
-undefined
+npm run test
 
 ## Questions
-Feel free to reach me via the email below with any questions. 
+If there any questions, feel free to reach out via the email provided below. 
 
 ## GitHub
 msalamey

@@ -12,7 +12,7 @@ In this assignment I created a command line application to generate a README fil
  
 ## Links: 
 
-Video Link: https://drive.google.com/file/d/19J_bckAAHtLSRCAsPKw1MqXl65pj3rRN/view
+Video Link: https://drive.google.com/file/d/19aOqNch43GpvqwVxKrfhjnEy6LMsSsbb/view
 
 Github Link: https://github.com/msalamey/mo-salamey-professional-readme
 
