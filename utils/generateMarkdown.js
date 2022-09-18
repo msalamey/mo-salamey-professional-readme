@@ -40,9 +40,6 @@ const renderLicenseSection = (license) =>
 function generateMarkdown(data) {
   return `# ${data.title}\n`+renderLicenseSection(data.license)+`
   
-## Description
-${data.description}
-
 ## Table of Contents: 
 * [Description](#Description)
 * [Installation](#Installation)
@@ -53,6 +50,9 @@ ${data.description}
 * [Questions](#Questions)
 * [Github Username](#Username)
 
+## Description
+${data.description}
+
 ## Installation
 ${data.installation}
 
@@ -60,7 +60,7 @@ ${data.installation}
 ${data.usage}
 
 ## License
-${data.license}
+I have my ${data.license}.
 
 ## Contributing
 ${data.contributing}
@@ -73,6 +73,9 @@ ${data.questions}
 
 ## GitHub
 ${data.username}
+
+## Email Address
+${data.email}
 `;
 }
 

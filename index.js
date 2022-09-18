@@ -28,7 +28,7 @@ const questions = [
     {
         type: "list",
         name: "license",
-        message: "Please select your project licence/badge.",   
+        message: "Please select your project license/badge.",   
         choices: ["ISC", "MIT", "Apache", "IBM", "BSD", "None"]
     }, 
     {
@@ -60,7 +60,7 @@ const questions = [
 
 // TODO: Create a function to write README file - wrote function. 
 inquirer.prompt(questions).then((answers) => {            
-fs.writeFile("README.md", generate (answers), function(err) { 
+fs.writeFile("GENERATED_README.md", generate (answers), function(err) { 
                 if (err) {
                 throw err
                 }; 

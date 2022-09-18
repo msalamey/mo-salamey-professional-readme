@@ -3,7 +3,7 @@
 In this assignment I created a command line application to generate a README file. I utilized Node Modules (NPM), Inquirer and package.json. 
 
 ## Actions taken:
-* Utilized Inquirer to prompt the user with a series of questions (project name, description, etc.) that will be displayed on the user's README. 
+* Utilized Inquirer package to prompt the user with a series of questions (project name, description, etc.) via the command-line interface. 
 * Included a "list" prompt to allow the user to select a license. 
 * Utilized the "writefile" function to write the inputs onto the README. 
 * Utilized the "init" function to initilize the application. 
